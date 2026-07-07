@@ -1429,6 +1429,7 @@ static void lynx_28g_cdr_lock_check_work(struct work_struct *work)
 
 		lynx_28g_cdr_lock_check(lane);
 
+
 		mutex_unlock(&lane->phy->mutex);
 	}
 	queue_delayed_work(system_power_efficient_wq, &priv->cdr_check,
